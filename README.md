@@ -1,4 +1,4 @@
-# Sporty Waitlist
+# Sportfy Waitlist
 
 Dark waitlist landing page for **sporty.us** — email capture into Supabase.
 
@@ -40,7 +40,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## What it includes
 
-- Dark full-bleed landing with Sporty branding
+- Dark full-bleed landing with Sportfy branding
 - Promo: **$20 toward next ticket** for the first 1,000 whitelist signups
 - Email field + **Join the Waitlist**
 - Duplicate-email handling

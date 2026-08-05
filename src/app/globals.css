@@ -54,6 +54,18 @@ body {
   }
 }
 
+@keyframes light-breathe {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.04);
+  }
+}
+
 @keyframes ticket-float {
   0%,
   100% {
@@ -78,6 +90,10 @@ body {
 
 .animate-fade-up-delay-3 {
   animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.36s both;
+}
+
+.animate-light {
+  animation: light-breathe 8s ease-in-out infinite;
 }
 
 .animate-ticket {

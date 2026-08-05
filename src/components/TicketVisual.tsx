@@ -47,6 +47,8 @@ export default function TicketVisual() {
             </div>
           </div>
         </div>
+
+        <div className="absolute -inset-8 -z-10 bg-accent/10 blur-3xl" />
       </div>
     </div>
   );

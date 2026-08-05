@@ -15,16 +15,16 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Sporty — Join the Waitlist",
+  title: "Sportfy — Join the Waitlist",
   description:
     "#1 Ticket Marketplace with Zero fees. Get a $20 gift toward your next ticket — first 1,000 on the waitlist.",
   metadataBase: new URL("https://sporty.us"),
   openGraph: {
-    title: "Sporty — Join the Waitlist",
+    title: "Sportfy — Join the Waitlist",
     description:
       "#1 Ticket Marketplace with Zero fees. First 1,000 on the waitlist get a $20 gift toward your next ticket.",
     url: "https://sporty.us",
-    siteName: "Sporty",
+    siteName: "Sportfy",
     type: "website",
   },
 };
