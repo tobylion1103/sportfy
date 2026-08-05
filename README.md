@@ -46,4 +46,4 @@ Open [http://localhost:3000](http://localhost:3000).
 - Duplicate-email handling
 - Placeholder logo text (swap when the real logo is ready)
 
-Emails are stored in the `waitlist` table — view them in the Supabase dashboard.
+Emails are stored in the `waitlist` table. Admins view and export them in the **sportfy-admin** app.
