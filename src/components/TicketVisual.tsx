@@ -24,19 +24,22 @@ export default function TicketVisual() {
             <div className="flex flex-col justify-between gap-8 p-6 pr-7 pl-8">
               <div>
                 <p className="font-display text-sm tracking-[0.35em] text-ember uppercase">
-                  Early Access
+                  Welcome Gift
                 </p>
-                <p className="mt-2 font-display text-5xl leading-none tracking-wide text-fg md:text-6xl">
+                <p className="mt-2 font-display text-5xl leading-none tracking-wide text-accent md:text-6xl">
                   $20
                 </p>
                 <p className="mt-2 text-sm text-fg-muted">
                   toward your next ticket
                 </p>
+                <p className="mt-3 font-display text-xs tracking-[0.2em] text-fg uppercase">
+                  Zero fees
+                </p>
               </div>
 
               <div className="space-y-2 border-t border-white/10 pt-4">
                 <div className="flex justify-between text-xs tracking-wider text-fg-muted uppercase">
-                  <span>Whitelist</span>
+                  <span>Waitlist</span>
                   <span>001 / 1000</span>
                 </div>
                 <div className="h-8 w-full bg-[repeating-linear-gradient(90deg,#b8ff3c_0_2px,transparent_2px_5px)] opacity-80" />
