@@ -24,7 +24,7 @@ export default function Home() {
       <div className="relative z-10 mx-auto flex min-h-dvh w-full max-w-6xl flex-col px-6 pt-8 pb-16 sm:px-10 lg:px-12">
         <header className="animate-fade-up flex items-center justify-between">
           <p className="font-display text-4xl leading-none tracking-[0.08em] text-fg sm:text-5xl">
-            SPORTFY
+            SPORTY
           </p>
           <span className="hidden text-xs tracking-[0.25em] text-fg-muted uppercase sm:inline">
             Ticket Resale · Coming Soon
@@ -54,7 +54,7 @@ export default function Home() {
           </h1>
 
           <p className="animate-fade-up-delay-2 mt-5 max-w-md text-base leading-relaxed text-fg-muted sm:text-lg">
-            Sportfy is giving a $20 gift toward your next ticket purchase to the
+            Sporty is giving a $20 gift toward your next ticket purchase to the
             first 1,000 to join our waitlist.
           </p>
 
@@ -64,7 +64,7 @@ export default function Home() {
         </section>
 
         <footer className="relative z-10 flex items-center justify-between border-t border-line pt-6 text-xs tracking-wide text-fg-muted">
-          <span>© {new Date().getFullYear()} Sportfy</span>
+          <span>© {new Date().getFullYear()} Sporty</span>
           <span>sporty.us</span>
         </footer>
       </div>
