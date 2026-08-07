@@ -6,8 +6,8 @@ const ANNOUNCEMENTS = [
 ];
 
 export default function AnnouncementBar() {
-  const line = ANNOUNCEMENTS.join("   ·   ");
-  const track = `${line}   ·   ${line}   ·   `;
+  const line = ANNOUNCEMENTS.join("   |   ");
+  const track = `${line}   |   ${line}   |   `;
 
   return (
     <div className="relative z-20 border-b border-line bg-accent text-white">
