@@ -30,7 +30,7 @@ export default function WaitlistForm() {
       }
 
       setStatus("success");
-      setMessage("You're on the list. We'll be in touch.");
+      setMessage("You're on the list. We'll email you when Sporty launches.");
       setEmail("");
     } catch {
       setStatus("error");
@@ -41,43 +41,47 @@ export default function WaitlistForm() {
   if (status === "success") {
     return (
       <div
-        className="w-full max-w-md rounded-sm border border-accent/30 bg-accent/10 px-5 py-4 text-left"
+        className="w-full max-w-lg rounded-xl border border-accent/20 bg-accent-soft px-5 py-4 text-left"
         role="status"
       >
-        <p className="font-display text-2xl tracking-wide text-accent">
-          You&apos;re in
-        </p>
-        <p className="mt-1 text-sm text-fg-muted">{message}</p>
+        <p className="text-lg font-semibold text-accent">You&apos;re in!</p>
+        <p className="mt-1 text-sm leading-relaxed text-fg-muted">{message}</p>
       </div>
     );
   }
 
   return (
-    <form onSubmit={onSubmit} className="w-full max-w-md">
+    <form onSubmit={onSubmit} className="w-full max-w-lg">
+      <label
+        htmlFor="waitlist-email"
+        className="mb-2 block text-sm font-medium text-fg"
+      >
+        Email address
+      </label>
       <div className="flex flex-col gap-3 sm:flex-row sm:items-stretch">
-        <label className="sr-only" htmlFor="waitlist-email">
-          Email
-        </label>
         <input
           id="waitlist-email"
           type="email"
           name="email"
           required
           autoComplete="email"
-          placeholder="Enter your email"
+          placeholder="you@email.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           disabled={status === "loading"}
-          className="min-h-12 flex-1 border border-line bg-bg-elevated/80 px-4 text-base text-fg outline-none transition placeholder:text-fg-muted/70 focus:border-accent disabled:opacity-60"
+          className="min-h-12 flex-1 rounded-xl border border-line bg-bg-elevated px-4 text-base text-fg shadow-sm outline-none transition placeholder:text-fg-muted/70 focus:border-accent focus:ring-2 focus:ring-accent/20 disabled:opacity-60"
         />
         <button
           type="submit"
           disabled={status === "loading"}
-          className="min-h-12 shrink-0 bg-accent px-6 font-display text-xl tracking-wide text-bg transition hover:bg-accent-dim disabled:cursor-not-allowed disabled:opacity-70"
+          className="min-h-12 shrink-0 rounded-xl bg-accent px-6 text-base font-semibold text-white transition hover:bg-accent-dim disabled:cursor-not-allowed disabled:opacity-70"
         >
-          {status === "loading" ? "Joining…" : "Join the Waitlist"}
+          {status === "loading" ? "Joining…" : "Join waitlist"}
         </button>
       </div>
+      <p className="mt-2.5 text-xs text-fg-muted">
+        No spam. Just launch updates and your welcome gift.
+      </p>
       {status === "error" && message ? (
         <p className="mt-3 text-sm text-ember" role="alert">
           {message}
