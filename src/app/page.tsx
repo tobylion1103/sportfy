@@ -32,7 +32,7 @@ export default function Home() {
 
         <div className="relative flex flex-1 flex-col py-10 md:py-14 lg:justify-center">
           <section className="relative z-10 max-w-xl lg:max-w-2xl">
-            <p className="animate-fade-up-delay-1 text-sm font-semibold tracking-wide text-accent">
+            <p className="animate-fade-up-delay-1 text-lg font-semibold tracking-wide text-accent sm:text-xl">
               Ticket marketplace
             </p>
 
