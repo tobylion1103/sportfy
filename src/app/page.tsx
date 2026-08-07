@@ -31,7 +31,7 @@ export default function Home() {
           </span>
         </header>
 
-        <section className="relative flex flex-1 flex-col justify-center py-16 md:max-w-xl lg:max-w-2xl md:py-20">
+        <section className="relative flex flex-1 flex-col justify-start pt-6 pb-8 md:max-w-xl md:justify-center md:py-20 lg:max-w-2xl">
           <p className="animate-fade-up-delay-1 max-w-lg font-display text-[clamp(1.35rem,3.5vw,2rem)] leading-tight tracking-wide text-fg">
             #1 Ticket Marketplace with{" "}
             <span className="text-accent">Zero</span> fees
