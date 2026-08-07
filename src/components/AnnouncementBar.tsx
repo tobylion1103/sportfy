@@ -1,7 +1,7 @@
 const ANNOUNCEMENTS = [
   "Zero fees on every ticket",
   "First 1,000 joiners get a $20 gift",
-  "Sporty — ticket marketplace for fans",
+  "Sporty - ticket marketplace for fans",
   "Coming soon to sporty.us",
 ];
 
